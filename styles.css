@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.project-info {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-info h2 {
+    color: #333;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-images img {
+    width: 25%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.instructions ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+}
+
+.instructions li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.video-container {
+    margin: 2rem 0;
+}
+
+img#videoFeed {
+    width: 60%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.demo-area {
+    margin-top: 2rem;
+}
+
+.click-box {
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+    border: 2px solid #007BFF;
+    background-color: white;
+    transition: background-color 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+}
+
+.click-box {
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+    border: 2px solid #007BFF;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.click-box:hover {
+    background-color: lightgreen;
+}
+
+.click-box:active {
+    background-color: red;
+    color: white;
+}

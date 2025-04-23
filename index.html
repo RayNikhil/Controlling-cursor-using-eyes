@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Controlled Mouse</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Eye Controlled Mouse</h1>
+    </header>
+    <main>
+        <!-- Project Description -->
+        <section class="project-info">
+            <h2>About the Project</h2>
+            <p>This project demonstrates how to use eye-tracking technology to control a computer mouse. 
+            By leveraging computer vision and machine learning tools like <strong>Mediapipe</strong> and <strong>OpenCV</strong>, 
+            this innovative system allows users to interact with their computer using just their eyes.</p>
+            <div class="project-images">
+                <img src="/static/images (1).jpeg" alt="Eye Tracking Demo">
+                <img src="/static/images (2).jpeg" alt="Cursor Control Visualization">
+            </div>
+        </section>
+
+        <!-- Instructions Section -->
+        <section class="instructions">
+            <h2>How It Works</h2>
+            <ul>
+                <li>The camera captures a live video feed of your face and eyes.</li>
+                <li>Using Mediapipe's FaceMesh, the system tracks your eye movements in real-time.</li>
+                <li>The cursor moves based on your iris position, and blinking triggers mouse clicks.</li>
+            </ul>
+        </section>
+
+        <!-- Controls Section -->
+        <section class="controls">
+            <button id="startControl">Start Eye Control</button>
+        </section>
+
+        <!-- Video Feed Section -->
+        <div class="video-container" id="videoContainer" style="display: none;">
+            <h3>Live Video Feed</h3>
+            <img src="{{ url_for('video_feed') }}" id="videoFeed" alt="Video Feed">
+        </div>
+
+        <!-- Demo Area Section -->
+        <div class="demo-area" id="demoArea" style="display: none;">
+            <h3>Interactive Demo</h3>
+            <p>Use your eyes to move the cursor. Try clicking the box below by blinking!</p>
+            <div class="click-box" id="clickBox"></div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Eye Controlled Mouse Project | Developed with Mediapipe, OpenCV, and Flask</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>
