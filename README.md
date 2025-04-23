@@ -1,7 +1,7 @@
 # Controlling cursor using eyes
 
 This project allows you to control your mouse cursor using your *eyes* and *blinks*.  
-It uses *Python, **OpenCV, **MediaPipe, and **PyAutoGUI*.
+It uses *Python, *OpenCV*, *MediaPipe*, and *PyAutoGUI*.
 
 ## 🔧 Features
 
